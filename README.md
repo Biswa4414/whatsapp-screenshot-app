@@ -1,79 +1,45 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+Description
+This is a mobile application built using React Native that allows users to open WhatsApp and take screenshots within the app.
 
-# Getting Started
+Installation
+Clone the repository to local machine:
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+git clone https://github.com/your-username/react-native-project.git
+Navigate into the project directory:
 
-## Step 1: Start the Metro Server
+cd react-native-whatsapp-screenshot
+Install dependencies using npm:
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+npm install
 
-To start Metro, run the following command from the _root_ of your React Native project:
+Usage
+I have a device or emulator connected to run the app.
 
-```bash
-# using npm
-npm start
+Start the Metro bundler:
 
-# OR using Yarn
-yarn start
-```
+java
+Copy code
+npx react-native start
+Run the app on your device or emulator
 
-## Step 2: Start your Application
+npx react-native run-android
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+How It Works
+This app uses React Native and various libraries to accomplish the following:
 
-### For Android
+Open WhatsApp with a specific phone number using deep linking.
+Capture a screenshot of the app's content using the react-native-view-shot library.
+Save the screenshot to the device's camera roll.
 
-```bash
-# using npm
-npm run android
+Testing
+To test the app:
 
-# OR using Yarn
-yarn android
-```
+Open the app on device or emulator.
+Press the "Open WhatsApp" button to open WhatsApp with a predefined phone number.
+Once WhatsApp is opened, a "Take Screenshot" button will appear.
+Press the "Take Screenshot" button to capture a screenshot of the app's content.
+Check the device's camera roll to verify that the screenshot has been saved successfully.
 
-### For iOS
-
-```bash
-# using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
-```
-
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
-
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
-
-## Step 3: Modifying your App
-
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+Technologies Used
+React Native
+react-native-view-shot
